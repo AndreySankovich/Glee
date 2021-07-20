@@ -1,3 +1,7 @@
+body {
+  @extend %rubik-400;
+}
+
 .container {
   max-width: 1190px;
   padding: 0 10px;
