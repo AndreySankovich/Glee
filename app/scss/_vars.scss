@@ -1,5 +1,6 @@
 $color-link: #436372;
-$accent: #7b7b7b;
+$color-text: #7b7b7b;
+$accent: #243f4d;
 
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
@@ -31,4 +32,23 @@ $accent: #7b7b7b;
   font-weight: 700;
 }
 
-%btn {}
+%btn {
+  background-color: #a3bbc8;
+  padding: 25px 100px 25px 30px;
+  color: #fff;
+  border: none;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url('../images/icons/arrow-btn.svg');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 11px;
+    right: 20px;
+    top: 30px;
+
+  }
+}

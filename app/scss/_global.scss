@@ -1,9 +1,18 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   @extend %rubik-400;
 }
 
+.main {
+  flex-grow: 1;
+}
+
 .container {
-  max-width: 1190px;
+  max-width: 1790px;
   padding: 0 10px;
   margin: 0 auto;
 }

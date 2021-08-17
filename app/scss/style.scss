@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -16,6 +17,9 @@
 }
 
 .menu {
+  margin-left: 480px;
+  margin-right: 330px;
+
   &__list {
     display: flex;
   }
@@ -27,8 +31,8 @@
   &__link {
     color: #234969;
     font-size: 15px;
-    @extend %rubik-700;
-    color: #436372;
+    @extend %rubik-400;
+    color: $color-link;
 
   }
 }
@@ -132,7 +136,7 @@
   &__phone {
     display: block;
     margin-bottom: 15px;
-    color: $accent;
+    color: $color-text;
     width: 270px;
   }
 
@@ -142,7 +146,7 @@
 
   &__connection-text {
     text-transform: uppercase;
-    color: $accent;
+    color: $color-text;
   }
 
   &__title {
@@ -157,12 +161,12 @@
   &__link {
     display: block;
     margin-bottom: 20px;
-    color: $accent;
+    color: $color-text;
   }
 
   &__text {
     margin-bottom: 35px;
-    color: $accent;
+    color: $color-text;
     font-size: 14px;
     line-height: 24px;
   }
@@ -195,7 +199,7 @@
   display: flex;
   justify-content: space-between;
   padding: 38px 0 40px;
-  color: $accent;
+  color: $color-text;
 
   &__menu {
     position: relative;
@@ -207,21 +211,99 @@
 
   &__link {
     padding: 0 15px;
-    color: $accent;
+    color: $color-text;
   }
 
   &__link::after {
     content: '|';
     position: absolute;
-    margin-left: 15px;
+    margin-right: 15px;
   }
-
 }
 
+.top-slider {
+  background-color: #fcd7b6;
+  padding-top: 100px;
+  padding-bottom: 90px;
 
+  &__container {
+    max-width: 1920px;
+  }
 
+  &__content {
+    padding: 110px 120px 0 250px;
+  }
 
+  &__item {
+    display: flex !important;
+    justify-content: space-around;
+  }
 
+  &__img {
+    max-width: 800px;
+  }
+
+  &__title {
+    max-width: 415px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $accent;
+    @extend %rubik-500;
+    margin-bottom: 44px;
+
+  }
+
+  &__text {
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 45px;
+    color: $color-link;
+    @extend %rubik-400;
+  }
+
+  &__btn {
+    @extend %btn;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 0 10px;
+      counter-reset: slider-num;
+
+      button {
+        padding: 0;
+        background-color: #fde3cc;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        counter-increment: slider-num;
+        position: relative;
+        color: $color-link;
+
+        &::after {
+          content: ''(slider-num);
+          position: absolute;
+          text-align: center;
+
+        }
+      }
+
+      &.slick-active button {
+        background-color: #fff;
+        color: $accent;
+
+        &::before {
+          color: #667983;
+          background-color: #fde3cc;
+        }
+      }
+    }
+  }
+}
 
 
 
