@@ -32,7 +32,7 @@ $accent: #243f4d;
   font-weight: 700;
 }
 
-%btn {
+%btn-color {
   background-color: #a3bbc8;
   padding: 25px 100px 25px 30px;
   color: #fff;
@@ -49,6 +49,33 @@ $accent: #243f4d;
     height: 11px;
     right: 20px;
     top: 30px;
-
   }
+}
+
+%btn-none-color {
+  background-color: transparent;
+  line-height: 0;
+  padding: 24px 95px 25px 20px;
+  color: $color-link;
+  border: 1px solid #b3b7b5;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url('../images/icons/arrow-color-btn.svg');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 11px;
+    right: 13px;
+    top: 20px;
+  }
+}
+
+%title {
+  font-size: 36px;
+  @extend %dmsans-700;
+  color: #191919;
 }
