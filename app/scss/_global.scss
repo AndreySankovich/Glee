@@ -5,6 +5,11 @@ body {
 
 body {
   @extend %rubik-400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $accent;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {

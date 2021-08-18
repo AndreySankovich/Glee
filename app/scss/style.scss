@@ -224,10 +224,10 @@
 .top-slider {
   background-color: #fcd7b6;
   padding-top: 100px;
-  padding-bottom: 90px;
+  padding-bottom: 45px;
 
   &__container {
-    max-width: 1920px;
+    max-width: 1790px;
   }
 
   &__content {
@@ -271,7 +271,7 @@
     justify-content: center;
 
     li {
-      padding: 0 10px;
+      padding: 0 5px;
       counter-reset: slider-num;
 
       button {
@@ -305,7 +305,97 @@
   }
 }
 
+.info {
+  background-color: #fef7f0;
+  padding: 45px 0;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding-left: 75px;
+    position: relative;
+  }
+
+  &__item-support {
+    max-width: 280px;
+    margin-left: 145px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/support.svg');
+      width: 50px;
+      height: 53px;
+      left: 0;
+      top: 8px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/border.svg');
+      width: 1px;
+      height: 195px;
+      right: -200px;
+      top: -45px;
+    }
+  }
+
+  &__item-delivery {
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/delivery.svg');
+      width: 53px;
+      height: 36px;
+      left: 0;
+      top: 20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/border.svg');
+      width: 1px;
+      height: 195px;
+      right: -200px;
+      top: -45px;
+    }
+  }
+
+  &__item-payment {
+    max-width: 310px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/payment.svg');
+      width: 53px;
+      height: 52px;
+      left: 0;
+      top: 205x;
+    }
+  }
+
+  &__item-title {
+    max-width: 220px;
+    font-size: 18px;
+    line-height: 40px;
+    @extend %dmsans-700;
+    color: #414141;
+    margin: 5px 0 0;
+  }
+
+  &__item-subtitle {
+    color: #585858;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %dmsans-400;
+  }
+}
 
 
 
