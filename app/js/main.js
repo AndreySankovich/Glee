@@ -1,6 +1,6 @@
 $(function () {
-  var mixer = mixitup('.product__items');
 
+  var mixer = mixitup('.product__items');
 
   $('.top-slider__inner').slick({
     dots: true,
@@ -10,4 +10,5 @@ $(function () {
     autoplaySpeed: 2000,
     infinite: true,
   });
-})
+
+});
