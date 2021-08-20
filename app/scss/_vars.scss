@@ -74,6 +74,16 @@ $accent: #243f4d;
   }
 }
 
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+
 %title {
   font-size: 36px;
   @extend %dmsans-700;

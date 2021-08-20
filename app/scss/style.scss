@@ -779,10 +779,17 @@
       color: inherit;
     }
   }
+
+  &__bg {
+    position: absolute;
+    background-color: #fef7f0;
+    bottom: 0;
+    height: 270px;
+    width: 100%;
+  }
 }
 
 .partners {
-  margin-top: -175px;
   position: relative;
   background-color: #fef7f0;
 
@@ -795,7 +802,7 @@
     background-color: #fef7f0;
     display: flex;
     justify-content: center;
-    padding-top: 265px;
+    padding-top: 95px;
     padding-bottom: 90px;
   }
 
@@ -888,10 +895,124 @@
     color: #243f4d;
     background-color: #fff;
     border: 1px solid #a3bbc8;
+    margin-bottom: 120px;
 
   }
 }
 
 
+.product {
+  &__inner {
+    display: flex;
+  }
+
+  &__filter-btn {
+    display: none;
+  }
+}
+
+.filter {
+  &__title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    color: $accent;
+    text-transform: uppercase;
+    padding-right: 55px;
+    position: relative;
+  }
+
+  &__category {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      left: 110px;
+      top: 15px;
+      background-color: #a3bbc8;
+    }
+  }
+}
+
+.filter {
+  max-width: 275px;
+}
+
+.filter-category {
+  &__label {
+    display: block;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+  }
+}
+
+.irs--flat .irs-line {
+  background-color: #c2d2db;
+  height: 3px;
+  top: 25px;
+  border-radius: 0;
+  width: 275px;
+
+}
+
+.irs--flat .irs-handle {
+  width: 15px;
+  height: 15px;
+  background-color: #a3bbc8;
+  top: 20px;
+}
+
+.irs--flat .irs-bar {
+  height: 4px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+  display: none;
+  top: 50px;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+
+.filter-price {
+  margin-top: 75px;
+
+  &__title {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      left: 65px;
+      top: 15px;
+      background-color: #a3bbc8;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__from,
+  &__to {
+    display: block;
+  }
+
+  &__from {
+    margin-right: auto;
+  }
+}
 
 @import 'media';

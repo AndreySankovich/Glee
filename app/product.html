@@ -82,7 +82,7 @@
     <section class="top">
       <div class="top__container">
         <div class="container">
-          <h2 class="top__title title">Log in</h2>
+          <h2 class="top__title title">Product list 1</h2>
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item">
@@ -92,7 +92,7 @@
               </li>
               <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" href="#">
-                  Log in
+                  Product list 1
                 </a>
               </li>
             </ul>
@@ -100,32 +100,86 @@
         </div>
       </div>
     </section>
-
-    <section class="modal">
-
-      <form class="modal__form" accept="#">
-        <label class="modal__label">
-          Username or email address *
-          <input type="text" class="modal__input">
-        </label>
-        <label class="modal__label">
-          Password *
-          <input type="password" class="modal__input">
-        </label>
-        <button class="modal__btn" type="submit">Login</button>
-        <label class="modal__label-checkbox">
-          <input type="checkbox">
-          Remember me
-          <a class="modal__error" href="#">Lost your password?</a>
-        </label>
-        <label class="modal__register">
-          Not registered? No problem
-          <button class="modal__register-btn" type="submit">Create an account</button>
-        </label>
-      </form>
+    <div class="partners">
+      <div class="partners__box">
+        <img class="partners__box-img" src="images/partners/partner-1.png" alt="partners logo">
+        <img class="partners__box-img" src="images/partners/partner-2.png" alt="partners logo">
+        <img class="partners__box-img" src="images/partners/partner-3.png" alt="partners logo">
+        <img class="partners__box-img" src="images/partners/partner-4.png" alt="partners logo">
+        <img class="partners__box-img" src="images/partners/partner-5.png" alt="partners logo">
+      </div>
+    </div>
 
 
+    <section class="product">
+      <div class="container">
+        <div class="product__inner">
+          <button class="product__filter-btn">
+          </button>
+          <div class="product__filters filter">
+
+            <div class="product-category filter__item">
+              <h3 class="filter__title filter__category">Category</h3>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  Chair
+                  <input class="filter-category__input" type="text">
+                </label>
+                <label class="filter-category__label">
+                  Table
+                  <input class="filter-category__input" type="text">
+                </label>
+                <label class="filter-category__label">
+                  Lamp
+                  <input class="filter-category__input" type="text">
+                </label>
+                <label class="filter-category__label">
+                  Watch
+                  <input class="filter-category__input" type="text">
+                </label>
+                <label class="filter-category__label">
+                  Clock
+                  <input class="filter-category__input" type="text">
+                </label>
+              </form>
+            </div>
+
+            <div class="filter__item filter-price">
+              <h3 class="filter__title filter-price__title">Price</h3>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0" data-max="1000" data-from="100"
+                  data-to="500">
+                <label class="filter-price__label">
+                  <span class="filter-price__box">
+                    $ <span class="filter-price__from"></span>
+                    $ <span class="filter-price__to"></span>
+                  </span>
+                </label>
+              </form>
+            </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </main>
   <footer class="footer">
