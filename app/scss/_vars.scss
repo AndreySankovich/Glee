@@ -79,3 +79,11 @@ $accent: #243f4d;
   @extend %dmsans-700;
   color: #191919;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

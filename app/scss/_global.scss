@@ -21,3 +21,42 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
+
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+
+  &__list {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  &__item {
+    color: #737980;
+    padding-right: 20px;
+    position: relative;
+
+    &::after {
+      content: "/";
+      position: absolute;
+      right: 6px;
+      top: 0;
+    }
+
+    &:last-child {
+      color: #737980;
+      padding-right: 0;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+}

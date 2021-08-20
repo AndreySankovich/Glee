@@ -41,7 +41,6 @@
   }
 }
 
-
 .user-nav {
   display: flex;
   align-items: center;
@@ -806,6 +805,92 @@
   }
 }
 
+.top {
+
+
+  &__container {
+    background-color: #edf1f4;
+    margin: 0 auto;
+    padding: 35px 0;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %rubik-400;
+    font-size: 36px;
+    line-height: 24px;
+  }
+}
+
+.modal {
+  padding-top: 122px;
+  max-width: 475px;
+  margin: 0 auto;
+
+  &__label {
+    display: block;
+    margin-bottom: 30px;
+    color: $color-link;
+  }
+
+  &__label-checkbox {
+    display: inline-block;
+    padding-bottom: 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #f6f6f6;
+    width: 100%;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #f6f6f6;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  &__btn {
+    display: block;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 18px;
+    @extend %rubik-500;
+    padding: 15px 0;
+    border: none;
+    width: 100%;
+    cursor: pointer
+  }
+
+  &__error {
+    margin-top: 30px;
+    color: $color-link;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 218px;
+  }
+
+  &__register {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 35px;
+  }
+
+  &__register-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    @extend %rubik-500;
+    font-size: 18px;
+    padding: 20px 0;
+    color: #243f4d;
+    background-color: #fff;
+    border: 1px solid #a3bbc8;
+
+  }
+}
 
 
 

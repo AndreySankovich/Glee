@@ -12,7 +12,7 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <div class="header__inner">
         <a class="logo" href="#">
           <img class="header__logo" src="images/logo.png" alt="logo">
@@ -79,64 +79,53 @@
 
   <main class="main">
 
-    <section class="top-slider">
-      <div class="container top-slider__container">
-
-        <div class="top-slider__inner">
-          <div class="top-slider__item">
-            <div class="top-slider__content">
-              <h2 class="top-slider__title">
-                SMART AND
-                TRENDY
-              </h2>
-              <p class="top-slider__text">
-                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-              </p>
-              <a class="top-slider__btn" href="#">
-                Shop Now
-              </a>
-            </div>
-            <img class="top-slider__img" src="images/slider/sofa.png" alt="slide sofa">
+    <section class="top">
+      <div class="top__container">
+        <div class="container">
+          <h2 class="top__title title">Log in</h2>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Log in
+                </a>
+              </li>
+            </ul>
           </div>
-
-          <div class="top-slider__item">
-            <div class="top-slider__content">
-              <h2 class="top-slider__title">
-                SMART AND
-                TRENDY
-              </h2>
-              <p class="top-slider__text">
-                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-              </p>
-              <a class="top-slider__btn" href="#">
-                Shop Now
-              </a>
-            </div>
-            <img class="top-slider__img" src="images/slider/sofa.png" alt="slide sofa">
-          </div>
-
-          <div class="top-slider__item">
-            <div class="top-slider__content">
-              <h2 class="top-slider__title">
-                SMART AND
-                TRENDY
-              </h2>
-              <p class="top-slider__text">
-                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-              </p>
-              <a class="top-slider__btn" href="#">
-                Shop Now
-              </a>
-            </div>
-            <img class="top-slider__img" src="images/slider/sofa.png" alt="slide sofa">
-          </div>
-
-
         </div>
       </div>
     </section>
 
+    <section class="modal">
 
+      <form class="modal__form" accept="#">
+        <label class="modal__label">
+          Username or email address *
+          <input type="text" class="modal__input">
+        </label>
+        <label class="modal__label">
+          Password *
+          <input type="password" class="modal__input">
+        </label>
+        <button class="modal__btn" type="submit">Login</button>
+        <label class="modal__label-checkbox">
+          <input type="checkbox">
+          Remember me
+          <a class="modal__error" href="#">Lost your password?</a>
+        </label>
+        <label class="modal__register">
+          Not registered? No problem
+          <button class="modal__register-btn" type="submit">Create an account</button>
+        </label>
+      </form>
+
+
+    </section>
 
   </main>
   <footer class="footer">
