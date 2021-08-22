@@ -60,3 +60,48 @@ body {
     color: inherit;
   }
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 120px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item,
+  &__list-prev,
+  &__list-next {
+    padding: 20px;
+    margin: 0 15px;
+    border: 1px solid #a3bbc8;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $accent;
+  }
+
+
+  &__list-prev {
+    width: 90px;
+    display: none;
+  }
+
+  &__list-next {
+    width: 75px;
+    height: 50px;
+  }
+
+  &__link {
+    color: inherit;
+  }
+
+  &__item--active {
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+
+}

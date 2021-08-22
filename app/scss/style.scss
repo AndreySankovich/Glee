@@ -406,7 +406,7 @@
 }
 
 .product {
-  padding: 75px 0 187px;
+  padding: 75px 0;
 
 
   &__items {
@@ -1242,10 +1242,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 45px;
   }
-
-
 }
-
 
 .product-item {
   &__list {
