@@ -9,6 +9,7 @@
   "author": "Andrey Sankovich",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.4",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -17,7 +18,12 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
-    "sass": "^1.35.2"
+    "jquery-form-styler": "^2.0.2",
+    "mixitup": "^3.3.1",
+    "rateyo": "^2.3.2",
+    "sass": "^1.35.2",
+    "slick-carousel": "^1.8.1"
   }
 }
