@@ -75,7 +75,22 @@ $(function () {
 
   });
 
-  var mixer = mixitup('.product__items');
+  // var mixer = mixitup('.product__items');
+  // var mixer1 = mixitup('.design__items');
+  var product = document.querySelector('[data-ref="product"]');
+  var design = document.querySelector('[data-ref="design"]');
+
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+
+  var mixer1 = mixitup(product, config);
+  var mixer2 = mixitup(design, config);
+
+
+
 
   $('.top-slider__inner').slick({
     dots: true,
