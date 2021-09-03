@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+.body-hidden {
+  overflow: hidden;
+}
+
 body {
   @extend %rubik-400;
   font-size: 16px;
@@ -20,6 +24,51 @@ body {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.menu-btn {
+  background-color: $color-bg;
+  height: 48px;
+  width: 48px;
+  position: relative;
+  display: none;
+  border-radius: 5px;
+
+  .menu-btn &__first,
+  .menu-btn &__center,
+  .menu-btn &__last {
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: 48%;
+    left: 15%;
+    height: 3px;
+    width: 70%;
+    background-color: red;
+    transition: all 0.2s ease-out;
+  }
+
+  .menu-btn &__first {
+    top: 23%;
+  }
+
+  .menu-btn &__last {
+    top: 73%;
+  }
+
+  .menu-btn.menu-btn--active &__first {
+    transform: rotate(45deg);
+    top: 48%;
+  }
+
+  .menu-btn.menu-btn--active &__center {
+    opacity: 0;
+  }
+
+  .menu-btn.menu-btn--active &__last {
+    transform: rotate(-45deg);
+    top: 48%;
+  }
 }
 
 

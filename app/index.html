@@ -14,10 +14,15 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="header__logo" src="images/logo.png" alt="logo">
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src="images/logo.png" alt="logo">
         </a>
         <nav class="menu">
+          <button class="menu-btn">
+            <span class="menu-btn__first"></span>
+            <span class="menu-btn__center"></span>
+            <span class="menu-btn__last"></span>
+          </button>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">
@@ -54,26 +59,24 @@
 
         <div class="user-nav">
           <a class="user-nav__link user-nav__link--search" href="#">
-            <img class="user-nav__img" src="images/icons/search.svg" alt="search icon">
+            <img class="user-nav__img user-nav__search-img" src="images/icons/search.svg" alt="search icon">
           </a>
           <div class="user-nav__bg">
             <a class="user-nav__link user-nav__link--heart" href="#">
               <span class="user-nav__num">0</span>
-              <img class="user-nav__img" src="images/icons/heart.svg" alt="heart icon">
+              <img class="user-nav__img user-nav__heart-img" src="images/icons/heart.svg" alt="heart icon">
             </a>
             <span class="user-nav__border"></span>
             <a class="user-nav__link user-nav__link--cart" href="#">
               <span class="user-nav__num">0</span>
-              <img class="user-nav__img" src="images/icons/cart.svg" alt="cart icon">
+              <img class="user-nav__img user-nav__cart-img" src="images/icons/cart.svg" alt="cart icon">
             </a>
           </div>
-
           <a class="user-nav__link" href="#">
             <img class="user-nav__img" src="images/ellipse.png" alt="ellipse icon">
           </a>
         </div>
       </div>
-
     </div>
   </header>
 
@@ -130,7 +133,6 @@
             </div>
             <img class="top-slider__img" src="images/slider/sofa.png" alt="slide sofa">
           </div>
-
         </div>
       </div>
     </section>
@@ -138,41 +140,46 @@
     <div class="info">
       <div class="container info__container">
         <div class="info__inner">
-
-          <div class="info__item info__item-support">
-            <div class="info__item-text">
-              <div class="info__item-title">
-                Support 24/7.
+          <ul class="info__list">
+            <li class="info__list-item">
+              <div class="info__item info__item-support">
+                <div class="info__item-text">
+                  <div class="info__item-title">
+                    Support 24/7.
+                  </div>
+                  <p class="info__item-subtitle">
+                    Contact us 24 hours a day,
+                    7 days a week.
+                  </p>
+                </div>
               </div>
-              <p class="info__item-subtitle">
-                Contact us 24 hours a day,
-                7 days a week.
-              </p>
-            </div>
-          </div>
-
-          <div class="info__item info__item-delivery">
-            <div class="info__item-text">
-              <div class="info__item-title">
-                Delivery.
+            </li>
+            <li class="info__list-item">
+              <div class="info__item info__item-delivery">
+                <div class="info__item-text">
+                  <div class="info__item-title">
+                    Delivery.
+                  </div>
+                  <p class="info__item-subtitle">
+                    Free shipping on all US order.
+                  </p>
+                </div>
               </div>
-              <p class="info__item-subtitle">
-                Free shipping on all US order.
-              </p>
-            </div>
-          </div>
-
-          <div class="info__item info__item-payment">
-            <div class="info__item-text">
-              <div class="info__item-title">
-                100% Payment secure.
+            </li>
+            <li class="info__list-item">
+              <div class="info__item info__item-payment">
+                <div class="info__item-text">
+                  <div class="info__item-title">
+                    100% Payment secure.
+                  </div>
+                  <p class="info__item-subtitle">
+                    We ensure secure payment
+                    with PEV.
+                  </p>
+                </div>
               </div>
-              <p class="info__item-subtitle">
-                We ensure secure payment
-                with PEV.
-              </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -212,7 +219,6 @@
           </ul>
 
           <div class="product__items">
-
             <div class="product-item mix category-a">
               <div class="product-item__img-box">
                 <img class="product-item__images" src="images/product/1.jpg" alt="product">
@@ -470,10 +476,6 @@
             </div>
           </div>
         </div>
-
-
-
-
       </div>
     </section>
 
@@ -509,7 +511,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -642,9 +643,6 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
     </section>
 

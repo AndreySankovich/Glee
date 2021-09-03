@@ -1,4 +1,42 @@
 $(function () {
+
+  $('.user-nav__link').on('click', function () {
+    $('.user-nav').toggleClass('user-nav--active');
+  });
+
+
+
+
+
+  // $('.menu-btn').on('click', function () {
+  //   $('.menu-btn').toggleClass('menu-btn--active');
+  // });
+
+
+
+
+
+
+  $('.menu-btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.menu-btn').on('click', function () {
+    $('.menu-btn').toggleClass('menu-btn--active');
+  });
+
+  $('.menu a').on('click', function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+
+  $('.menu-btn').on('click', function () {
+    $('body').toggleClass('body-hidden')
+  })
+
   $('.product-list__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -74,9 +112,15 @@ $(function () {
 
 
   });
+  $('.top-slider__inner').slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    fade: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+  });
 
-  // var mixer = mixitup('.product__items');
-  // var mixer1 = mixitup('.design__items');
   var product = document.querySelector('[data-ref="product"]');
   var design = document.querySelector('[data-ref="design"]');
 
@@ -92,13 +136,6 @@ $(function () {
 
 
 
-  $('.top-slider__inner').slick({
-    dots: true,
-    arrows: false,
-    autoplay: true,
-    fade: true,
-    autoplaySpeed: 2000,
-    infinite: true,
-  });
+
 
 });
