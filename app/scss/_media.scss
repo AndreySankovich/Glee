@@ -137,6 +137,17 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .contact {
+    padding: 60px 0;
+    margin-bottom: 50px;
+  }
+
+  .contact-top {
+    &__box {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 @media (max-width: 778px) {
@@ -434,7 +445,6 @@
     }
 
     &__img-user {
-      z-index: 99;
       bottom: 0;
     }
   }
@@ -449,6 +459,45 @@
       margin-left: -15px;
     }
   }
+
+  .contact-items {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  .contact-item {
+    margin-bottom: 20px;
+  }
+
+  .contact-bottom {
+    display: block;
+
+    &__form {
+      max-width: 100%;
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+
+    &__box {
+      width: 100%;
+      display: block;
+      margin-bottom: 0;
+    }
+
+    &__input {
+      width: 100%;
+      display: block;
+    }
+
+    &__map {
+      iframe {
+
+        width: 100%;
+      }
+    }
+  }
+
 }
 
 
