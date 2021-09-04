@@ -18,6 +18,11 @@
           <img class="header__logo" src="images/logo.png" alt="logo">
         </a>
         <nav class="menu">
+          <button class="menu-btn">
+            <span class="menu-btn__first"></span>
+            <span class="menu-btn__center"></span>
+            <span class="menu-btn__last"></span>
+          </button>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">
@@ -222,11 +227,9 @@
                 View more
               </a>
             </div>
-
-
           </div>
-          <div class="blog-page__aside">
 
+          <div class="blog-page__aside">
             <div class="blog-search filter__item">
               <form class="blog-search__form" action="#">
                 <input class="blog-search__input" type="text">
@@ -237,7 +240,7 @@
             </div>
 
             <div class="product-category filter__item">
-              <h3 class="filter__title filter__category">
+              <h3 class="filter__title filter__category filter__category--slide">
                 Category
               </h3>
               <form class="product-category__form" action="#">
@@ -275,75 +278,73 @@
             </div>
 
             <div class="product-recent filter__item">
-              <h3 class="filter__title filter__recent">
+              <h3 class="filter__title filter__recent product__recent--slide">
                 RECENT PRODUCTS
               </h3>
-              <div class="recent-item">
-                <div class="recent-item__imgbox">
-                  <a class="recent-item__img-link" href="#">
-                    <img class="recent-item__img" src="images/blog/recent/1.jpg" alt="recent item">
-                  </a>
+              <ul class="recent-item__list">
+                <div class="recent-item">
+                  <div class="recent-item__imgbox">
+                    <a class="recent-item__img-link" href="#">
+                      <img class="recent-item__img" src="images/blog/recent/1.jpg" alt="recent item">
+                    </a>
+                  </div>
+                  <div class="recent-item__content">
+                    <h4 class="recent-item__title">
+                      <a class="recent-item__link" href="#">Corem ipsum dolor tetur adipisicing elit</a>
+                    </h4>
+                    <a class="recent-item__date" href="#">
+                      28 JANUARY, 2020
+                    </a>
+                  </div>
                 </div>
-                <div class="recent-item__content">
-                  <h4 class="recent-item__title">
-                    <a class="recent-item__link" href="#">Corem ipsum dolor tetur adipisicing elit</a>
-                  </h4>
-                  <a class="recent-item__date" href="#">
-                    28 JANUARY, 2020
-                  </a>
+                <div class="recent-item">
+                  <div class="recent-item__imgbox">
+                    <a class="recent-item__img-link" href="#">
+                      <img class="recent-item__img" src="images/blog/recent/2.jpg" alt="recent item">
+                    </a>
+                  </div>
+                  <div class="recent-item__content">
+                    <h4 class="recent-item__title">
+                      <a class="recent-item__link" href="#">Fdipisicing elit, sed do eiusmod tempor</a>
+                    </h4>
+                    <a class="recent-item__date" href="#">
+                      28 JANUARY, 2020
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="recent-item">
-                <div class="recent-item__imgbox">
-                  <a class="recent-item__img-link" href="#">
-                    <img class="recent-item__img" src="images/blog/recent/2.jpg" alt="recent item">
-                  </a>
+                <div class="recent-item">
+                  <div class="recent-item__imgbox">
+                    <a class="recent-item__img-link" href="#">
+                      <img class="recent-item__img" src="images/blog/recent/3.jpg" alt="recent item">
+                    </a>
+                  </div>
+                  <div class="recent-item__content">
+                    <h4 class="recent-item__title">
+                      <a class="recent-item__link" href="#">Eonsectetur adipisicing elit, sed do eiusmod </a>
+                    </h4>
+                    <a class="recent-item__date" href="#">
+                      28 JANUARY, 2020
+                    </a>
+                  </div>
                 </div>
-                <div class="recent-item__content">
-                  <h4 class="recent-item__title">
-                    <a class="recent-item__link" href="#">Fdipisicing elit, sed do eiusmod tempor</a>
-                  </h4>
-                  <a class="recent-item__date" href="#">
-                    28 JANUARY, 2020
-                  </a>
+                <div class="recent-item">
+                  <div class="recent-item__imgbox">
+                    <a class="recent-item__img-link" href="#">
+                      <img class="recent-item__img" src="images/blog/recent/4.jpg" alt="recent item">
+                    </a>
+                  </div>
+                  <div class="recent-item__content">
+                    <h4 class="recent-item__title">
+                      <a class="recent-item__link" href="#">gnim ad minim veniam, quis nostrud </a>
+                    </h4>
+                    <a class="recent-item__date" href="#">
+                      28 JANUARY, 2020
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="recent-item">
-                <div class="recent-item__imgbox">
-                  <a class="recent-item__img-link" href="#">
-                    <img class="recent-item__img" src="images/blog/recent/3.jpg" alt="recent item">
-                  </a>
-                </div>
-                <div class="recent-item__content">
-                  <h4 class="recent-item__title">
-                    <a class="recent-item__link" href="#">Eonsectetur adipisicing elit, sed do eiusmod </a>
-                  </h4>
-                  <a class="recent-item__date" href="#">
-                    28 JANUARY, 2020
-                  </a>
-                </div>
-              </div>
-              <div class="recent-item">
-                <div class="recent-item__imgbox">
-                  <a class="recent-item__img-link" href="#">
-                    <img class="recent-item__img" src="images/blog/recent/4.jpg" alt="recent item">
-                  </a>
-                </div>
-                <div class="recent-item__content">
-                  <h4 class="recent-item__title">
-                    <a class="recent-item__link" href="#">gnim ad minim veniam, quis nostrud </a>
-                  </h4>
-                  <a class="recent-item__date" href="#">
-                    28 JANUARY, 2020
-                  </a>
-                </div>
-              </div>
-
+              </ul>
             </div>
-
-
           </div>
-
         </div>
       </div>
     </section>

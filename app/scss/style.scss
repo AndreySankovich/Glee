@@ -21,9 +21,6 @@
 }
 
 .menu {
-  margin-left: 480px;
-  margin-right: 330px;
-
   &__list {
     display: flex;
   }
@@ -33,11 +30,13 @@
   }
 
   &__link {
-    color: #234969;
     font-size: 15px;
-    @extend %rubik-400;
+    @extend %rubik-500;
     color: $color-link;
+  }
 
+  &__link-mob {
+    display: none;
   }
 }
 
@@ -111,10 +110,10 @@
   padding: 80px 0 40px;
   border-bottom: 1px solid #dae4e9;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   &__contact {
-    width: 200px;
+    width: 250px;
   }
 
   &__list {
@@ -122,7 +121,7 @@
   }
 
   &__nav {
-    width: 125px;
+    width: 150px;
   }
 
   &__item-form {
@@ -193,7 +192,7 @@
     font-size: 14px;
     line-height: 21px;
     color: #fff;
-    background-color: #a3bbc8;
+    background-color: $color-bg;
     padding: 19px 19px 19px 16px;
     margin-left: -5px
   }
@@ -216,12 +215,6 @@
   &__link {
     padding: 0 15px;
     color: $color-text;
-  }
-
-  &__link::after {
-    content: '|';
-    position: absolute;
-    margin-right: 15px;
   }
 }
 
@@ -317,19 +310,19 @@
     max-width: 1790px;
   }
 
-  &__inner {
+  &__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__item {
     padding-left: 75px;
     position: relative;
+    max-width: 390px;
   }
 
   &__item-support {
-    max-width: 280px;
-    margin-left: 145px;
 
     &::before {
       content: '';
@@ -346,9 +339,9 @@
       position: absolute;
       background-image: url('../images/icons/border.svg');
       width: 1px;
-      height: 195px;
+      height: 165px;
       right: -200px;
-      top: -45px;
+      top: -50px;
     }
   }
 
@@ -368,14 +361,13 @@
       position: absolute;
       background-image: url('../images/icons/border.svg');
       width: 1px;
-      height: 195px;
+      height: 165px;
       right: -200px;
-      top: -45px;
+      top: -50px;
     }
   }
 
   &__item-payment {
-    max-width: 310px;
 
     &::before {
       content: '';
@@ -475,7 +467,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #a3bbc8;
+    color: $color-bg;
 
     path {
       transition: all .3s;
@@ -483,7 +475,7 @@
   }
 
   &__link:hover {
-    background-color: #a3bbc8;
+    background-color: $color-bg;
 
     path {
       fill: #fff;
@@ -495,6 +487,8 @@
     margin: 0 auto;
     object-fit: cover;
     padding-top: 27px;
+    max-width: 230px;
+    height: 180px;
   }
 
   &__title {
@@ -502,7 +496,7 @@
   }
 
   &__price {
-    color: #a3bbc8;
+    color: $color-bg;
     @extend %dmsans-700;
     font-size: 16px;
     line-height: 40px;
@@ -646,7 +640,7 @@
   }
 
   &__status {
-    color: #a3bbc8;
+    color: $color-bg;
     font-size: 16px;
     line-height: 20px;
   }
@@ -728,9 +722,9 @@
   &__item-news {
     position: absolute;
     display: block;
-    border: 1px solid #a3bbc8;
+    border: 1px solid $color-bg;
     padding: 5px 30px;
-    background-color: #a3bbc8;
+    background-color: $color-bg;
     border-radius: 20px;
     color: #fff;
     top: 55%;
@@ -861,7 +855,7 @@
 
   &__btn {
     display: block;
-    background-color: #a3bbc8;
+    background-color: $color-bg;
     color: #fff;
     font-size: 18px;
     @extend %rubik-500;
@@ -896,7 +890,7 @@
     padding: 20px 0;
     color: #243f4d;
     background-color: #fff;
-    border: 1px solid #a3bbc8;
+    border: 1px solid $color-bg;
     margin-bottom: 120px;
 
   }
@@ -935,7 +929,7 @@
       height: 2px;
       left: 110px;
       top: 15px;
-      background-color: #a3bbc8;
+      background-color: $color-bg;
     }
   }
 
@@ -947,7 +941,7 @@
       height: 2px;
       left: 65px;
       top: 15px;
-      background-color: #a3bbc8;
+      background-color: $color-bg;
     }
   }
 
@@ -959,7 +953,7 @@
       height: 2px;
       left: 75px;
       top: 15px;
-      background-color: #a3bbc8;
+      background-color: $color-bg;
     }
   }
 
@@ -971,7 +965,7 @@
       height: 2px;
       right: 35px;
       top: 15px;
-      background-color: #a3bbc8;
+      background-color: $color-bg;
     }
   }
 
@@ -1029,13 +1023,13 @@
 .irs--flat .irs-handle {
   width: 15px;
   height: 15px;
-  background-color: #a3bbc8;
+  background-color: $color-bg;
   top: 20px;
 }
 
 .irs--flat .irs-bar {
   height: 4px;
-  background-color: #a3bbc8;
+  background-color: $color-bg;
 }
 
 .irs--flat .irs-handle>i:first-child {
@@ -1200,12 +1194,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #a3bbc8;
+    color: $color-bg;
     transition: all .3s;
   }
 
   &__link:hover {
-    background-color: #a3bbc8;
+    background-color: $color-bg;
 
     path {
       fill: #fff;
@@ -1226,7 +1220,7 @@
   }
 
   &__price {
-    color: #a3bbc8;
+    color: $color-bg;
     @extend %dmsans-700;
     font-size: 16px;
     line-height: 40px;
@@ -1273,7 +1267,7 @@
     bottom: 0;
     left: 0;
     padding: 20px 25px 20px 15px;
-    background-color: #a3bbc8;
+    background-color: $color-bg;
     color: #fff;
   }
 
@@ -1291,8 +1285,8 @@
   &__btn {
     @extend %btn-color;
     background-color: transparent;
-    border: 1px solid #a3bbc8;
-    color: #a3bbc8;
+    border: 1px solid $color-bg;
+    color: $color-bg;
     margin-bottom: 50px;
     transition: all .3s;
 
@@ -1302,7 +1296,7 @@
     }
 
     &:hover {
-      background-color: #a3bbc8;
+      background-color: $color-bg;
       color: #fff;
 
       &::after {
@@ -1334,7 +1328,7 @@
   }
 
   &__input {
-    border: 2px solid #a3bbc8;
+    border: 2px solid $color-bg;
     border-radius: 5px;
     height: 40px;
     width: 100%;
@@ -1342,7 +1336,7 @@
   }
 
   &__btn {
-    background-color: #a3bbc8;
+    background-color: $color-bg;
     border-radius: 5px;
     padding: 13px;
     height: 40px;
@@ -1456,7 +1450,7 @@
 
     blockquote {
       color: $accent;
-      border-left: 8px solid #a3bbc8;
+      border-left: 8px solid $color-bg;
       background-color: #edf1f4;
       padding: 25px 0 25px 40px;
       margin-bottom: 40px;
@@ -1698,7 +1692,7 @@
   &__btn {
     text-transform: uppercase;
     padding: 20px 40px;
-    background-color: #a3bbc8;
+    background-color: $color-bg;
     color: #fff;
     font-size: 14px;
     line-height: 21px;
@@ -1741,7 +1735,7 @@
     @extend %rubik-700;
     font-size: 140px;
     line-height: 32px;
-    color: #a3bbc8;
+    color: $color-bg;
     margin-right: 30px;
   }
 
@@ -2048,11 +2042,11 @@
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 
     path {
-      fill: #a3bbc8;
+      fill: $color-bg;
     }
 
     &:hover {
-      background-color: #a3bbc8;
+      background-color: $color-bg;
 
       path {
         fill: #fff;
@@ -2065,7 +2059,7 @@
     //   position: absolute;
     //   @extend %btn-color;
     //   text-transform: uppercase;
-    //   background-color: #a3bbc8;
+    //   background-color: $color-bg;
     //   border-radius: 5px;
     //   color: #fff;
     //   padding: 20px 55px;
@@ -2101,11 +2095,11 @@
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 
     path {
-      fill: #a3bbc8;
+      fill: $color-bg;
     }
 
     &:hover {
-      background-color: #a3bbc8;
+      background-color: $color-bg;
 
       path {
         fill: #fff;
@@ -2153,7 +2147,7 @@
   }
 
   &__btn {
-    background-color: #a3bbc8;
+    background-color: $color-bg;
     text-transform: uppercase;
     color: #fff;
     border-radius: 5px;
@@ -2170,7 +2164,7 @@
       position: absolute;
       top: 1px;
       right: 50px;
-      background-color: #a3bbc8;
+      background-color: $color-bg;
       width: 1px;
       height: 50px;
     }
@@ -2180,7 +2174,7 @@
       position: absolute;
       top: 1px;
       left: 50px;
-      background-color: #a3bbc8;
+      background-color: $color-bg;
       width: 1px;
       height: 50px;
     }
@@ -2189,7 +2183,7 @@
 
 .jq-number__field {
   width: 150px;
-  border: 1px solid #a3bbc8;
+  border: 1px solid $color-bg;
 
 }
 
@@ -2331,13 +2325,13 @@
     }
 
     &:hover {
-      background-color: #a3bbc8;
+      background-color: $color-bg;
       color: #fff;
     }
   }
 
   &__top-item--active {
-    background-color: #a3bbc8;
+    background-color: $color-bg;
     color: #fff;
   }
 
@@ -2373,7 +2367,7 @@
   .slick-next {
     position: absolute;
     background-color: transparent;
-    border: 1px solid #a3bbc8;
+    border: 1px solid $color-bg;
     border-radius: 5px;
     top: -120px;
     right: 0;
@@ -2381,7 +2375,7 @@
     height: 50px;
 
     path {
-      fill: #a3bbc8;
+      fill: $color-bg;
     }
   }
 
@@ -2436,7 +2430,7 @@
   }
 
   &__subtitle {
-    color: #a3bbc8;
+    color: $color-bg;
     @extend %dmsans-700;
     font-size: 16px;
     line-height: 20px;
@@ -2472,7 +2466,7 @@
   justify-content: space-around;
 
   &:hover {
-    border: 3px solid #a3bbc8;
+    border: 3px solid $color-bg;
   }
 
   &__boximg {
@@ -2486,11 +2480,11 @@
     transition: all .3s;
 
     path {
-      fill: #a3bbc8;
+      fill: $color-bg;
     }
 
     &:hover {
-      background-color: #a3bbc8;
+      background-color: $color-bg;
 
       path {
         fill: #fff;
@@ -2522,7 +2516,7 @@
   }
 
   &__input {
-    max-width: 300px;
+    width: 300px;
     width: 100%;
     background-color: #fafafa;
     border: none;
@@ -2545,24 +2539,6 @@
     margin-right: 20px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @import 'media';
