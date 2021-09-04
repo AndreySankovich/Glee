@@ -4,18 +4,13 @@ $(function () {
     $('.user-nav').toggleClass('user-nav--active');
   });
 
+  $('.filter__category--slide, filter__recent--slide').on('click', function () {
+    $(".product-category__form").slideToggle();
+  });
 
-
-
-
-  // $('.menu-btn').on('click', function () {
-  //   $('.menu-btn').toggleClass('menu-btn--active');
-  // });
-
-
-
-
-
+  $('.product__recent--slide').on('click', function () {
+    $(".recent-item__list").slideToggle();
+  });
 
   $('.menu-btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');

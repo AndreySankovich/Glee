@@ -438,6 +438,17 @@
       bottom: 0;
     }
   }
+
+  .blog-page {
+    &__inner {
+      flex-direction: column-reverse;
+      padding-top: 20px;
+    }
+
+    &__pagination {
+      margin-left: -15px;
+    }
+  }
 }
 
 
@@ -608,6 +619,24 @@
       margin-left: 65px;
     }
   }
+
+  .blog-page {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__item-box {
+      padding: 10px 15px 10px 10px;
+    }
+
+    &__btn {
+      padding: 20px 30px 20px 20px;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 340px) {
@@ -748,5 +777,12 @@
 
   .comments__content--last {
     margin-bottom: 10px;
+  }
+
+  .blog-page {
+    &__item {
+      margin-bottom: 20px;
+      padding-top: 25px;
+    }
   }
 }
