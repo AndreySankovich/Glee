@@ -179,6 +179,13 @@
     }
   }
 
+  .product-list {
+    max-width: 100%;
+
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 
@@ -612,6 +619,10 @@
       padding: 20px;
     }
   }
+
+  .conditions {
+    padding: 60px 0;
+  }
 }
 
 
@@ -826,6 +837,23 @@
     &__card-price {
       margin-bottom: 20px;
       margin-top: 20px;
+    }
+  }
+
+  .product-list {
+    &__img-box {
+      margin-top: 30px;
+    }
+
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .conditions {
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }
