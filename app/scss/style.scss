@@ -862,7 +862,9 @@
     padding: 15px 0;
     border: none;
     width: 100%;
-    cursor: pointer
+    cursor: pointer;
+
+
   }
 
   &__error {
@@ -963,7 +965,7 @@
       position: absolute;
       width: 40px;
       height: 2px;
-      right: 35px;
+      left: 200px;
       top: 15px;
       background-color: $color-bg;
     }
@@ -2006,7 +2008,7 @@
   &__card-img {
     margin: 0 60px 0 30px;
     border: 1px solid #f2f2f2;
-    min-width: 370px;
+    width: 370px;
     height: 500px;
     display: flex;
     align-items: center;
@@ -2053,39 +2055,7 @@
       }
     }
 
-    // &::before,
-    // &::after {
-    //   content: '';
-    //   position: absolute;
-    //   @extend %btn-color;
-    //   text-transform: uppercase;
-    //   background-color: $color-bg;
-    //   border-radius: 5px;
-    //   color: #fff;
-    //   padding: 20px 55px;
-    //   width: 100%;
-    //   height: 100%;
-    //   top: 0;
-    //   left: -100%;
-    //   overflow: hidden;
-    //   transition: all .5s;
-    //   z-index: 2;
-    // }
-
-    // &::after {
-    //   transition-delay: .2s;
-    // }
-
-    // &:hover::before,
-    // &:hover::after {
-    //   left: 0;
-    // }
   }
-
-  // &__card-link {
-  //   background-color: transparent;
-  //   border: none;
-  // }
 
   &__card-like-link {
     background-color: #fff;
